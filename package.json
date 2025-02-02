@@ -1,0 +1,69 @@
+{
+  "name": "@pherus/palette",
+  "version": "1.0.0",
+  "description": "palette is simple cms",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "build": "next build",
+    "start": "NODE_ENV=production node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phe-rus/palette.git"
+  },
+  "keywords": [
+    "cms",
+    "simple",
+    "palette",
+    "admin",
+    "panel"
+  ],
+  "author": "pherus",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/phe-rus/palette/issues"
+  },
+  "homepage": "https://github.com/phe-rus/palette#readme",
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "master",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      },
+      {
+        "name": "rc",
+        "prerelease": true
+      }
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "typescript": "^5.7.3",
+    "ts-node": "^10.9.2"
+  }
+}
